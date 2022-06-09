@@ -2,21 +2,30 @@
 <html>
 <head>
 <title>GrupoSeb</title>
+<link rel="stylesheet" href="style/login_page.css">
 </head>
 <body>
-
-    <img src="img/Sebsa.jpg">
-    <h1>Portal Educacional SEB</h1>
-    <p>Para acessar o Portal do Aluno, você precisa inserir seus dados nos respectivos campos.</p>
-    <form action="POST">
-        <label for="">Usuário</label>
-        <input type="text" placeholder="Ex.: 000.000.000-00" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" maxlength="11">
-        <label for="">Senha</label>
-        <input type="password" placeholder="*************">
-        <label for="">Token de validação</label>
-        <input type="number">
-        <input type="button" value="Entrar">
+    <form name="login" action="">
+    <div class="screen-1">
+        <img class="logo" src="img/Sebsa.png" alt="">
+        <div class="email">
+          <label for="email">E-Mail</label>
+          <div class="sec-2">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="email" name="email" placeholder="Exemplo@gmail.com"/>
+          </div>
+        </div>
+        <div class="password">
+          <label for="password">Senha</label>
+          <div class="sec-2">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input class="pas" type="password" name="senha" placeholder="············"/>
+            <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+          </div>
+        </div>
+        <input class="login" type="button" value="Login">
+        <div class="footer"><span>Sign up</span><span>Esqueceu a senha?</span></div>
+      </div>
     </form>
-
 </body>
 </html>
