@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrupoSeb</title>
+    <link rel="stylesheet" href="style/login_page.css">
+    <script defer src="script/validation.js"></script>
+</head>
+
+<body>
+    <form id="login" action="validation_page.html">
+        <div class="screen-1">
+            <img class="logo" src="img/Sebsa.png" alt="">
+            <div class="email">
+                <label for="email">E-Mail</label>
+                <div class="sec-2">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input id="email" type="email" name="email" />
+                    <span id="erro" hidden>*campo obrigatório!</span>
+                </div>
+            </div>
+            <div class="password">
+                <label for="password">Senha</label>
+                <div class="sec-2">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input id="senha" class="pas" type="password" name="senha" />
+                    <span id="erro" hidden>*campo obrigatório!</span>
+                    <ion-icon class="show-hide" name="eye-outline"></ion-icon>
+                </div>
+            </div>
+            <button class="login" type="submit">Login</button>
+            <div class="footer"><span>Sign up</span><span>Esqueceu a senha?</span></div>
+        </div>
+    </form>
+</body>
+
+</html>
