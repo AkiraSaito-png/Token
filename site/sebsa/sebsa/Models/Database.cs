@@ -7,7 +7,8 @@ namespace sebsa.Models
         public DbSet<Usuario> Usuarios { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
-            optionBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;Database=sebsa;Integrated Security=True");
+            optionBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;Password=1234;Host=localhost;Port=5432;Database=sebsa;");
+
         }
     }
 }

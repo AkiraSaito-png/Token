@@ -1,4 +1,6 @@
-﻿namespace sebsa.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace sebsa.Models
 {
     public class Usuario
     {
