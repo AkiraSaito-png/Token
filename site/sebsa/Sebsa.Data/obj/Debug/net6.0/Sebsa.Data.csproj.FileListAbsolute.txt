@@ -1,0 +1,14 @@
+D:\Dev\Token\site\sebsa\Sebsa.Data\bin\Debug\net6.0\Sebsa.Data.deps.json
+D:\Dev\Token\site\sebsa\Sebsa.Data\bin\Debug\net6.0\Sebsa.Data.runtimeconfig.json
+D:\Dev\Token\site\sebsa\Sebsa.Data\bin\Debug\net6.0\Sebsa.Data.dll
+D:\Dev\Token\site\sebsa\Sebsa.Data\bin\Debug\net6.0\Sebsa.Data.pdb
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\Sebsa.Data.csproj.AssemblyReference.cache
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\Sebsa.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\Sebsa.Data.AssemblyInfoInputs.cache
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\Sebsa.Data.AssemblyInfo.cs
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\Sebsa.Data.csproj.CoreCompileInputs.cache
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\Sebsa.Data.dll
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\refint\Sebsa.Data.dll
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\Sebsa.Data.pdb
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\Sebsa.Data.genruntimeconfig.cache
+D:\Dev\Token\site\sebsa\Sebsa.Data\obj\Debug\net6.0\ref\Sebsa.Data.dll

@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using sebsa.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Database>
+    (options => options.UseNpgsql(builder.Configuration.GetConnectionString("SebsaDb")));
 
 var app = builder.Build();
 
