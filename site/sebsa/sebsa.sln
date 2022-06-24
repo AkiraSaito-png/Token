@@ -5,8 +5,6 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sebsa", "sebsa\sebsa.csproj", "{653F217D-6980-4F01-A385-23275C93BC84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sebsa.Data", "Sebsa.Data\Sebsa.Data.csproj", "{A846C815-4400-4AA1-A574-A664EEAA287A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{653F217D-6980-4F01-A385-23275C93BC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{653F217D-6980-4F01-A385-23275C93BC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{653F217D-6980-4F01-A385-23275C93BC84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A846C815-4400-4AA1-A574-A664EEAA287A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A846C815-4400-4AA1-A574-A664EEAA287A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A846C815-4400-4AA1-A574-A664EEAA287A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A846C815-4400-4AA1-A574-A664EEAA287A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

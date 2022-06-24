@@ -3093,19 +3093,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
-      },
-      "Sebsa.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.5"
-        },
-        "compile": {
-          "bin/placeholder/Sebsa.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Sebsa.Data.dll": {}
-        }
       }
     }
   },
@@ -9532,36 +9519,37 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
-    },
-    "Sebsa.Data/1.0.0": {
-      "type": "project",
-      "path": "../Sebsa.Data/Sebsa.Data.csproj",
-      "msbuildProject": "../Sebsa.Data/Sebsa.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.6",
-      "Sebsa.Data >= 1.0.0"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\akira\\.nuget\\packages\\": {}
+    "C:\\Users\\alessandro.saito\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\sebsa.csproj",
+      "projectUniqueName": "C:\\Users\\alessandro.saito\\OneDrive - SEB - Sistema Educacional Brasileiro\\Documentos\\Dev\\Token\\site\\sebsa\\sebsa\\sebsa.csproj",
       "projectName": "sebsa",
-      "projectPath": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\sebsa.csproj",
-      "packagesPath": "C:\\Users\\akira\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\obj\\",
+      "projectPath": "C:\\Users\\alessandro.saito\\OneDrive - SEB - Sistema Educacional Brasileiro\\Documentos\\Dev\\Token\\site\\sebsa\\sebsa\\sebsa.csproj",
+      "packagesPath": "C:\\Users\\alessandro.saito\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alessandro.saito\\OneDrive - SEB - Sistema Educacional Brasileiro\\Documentos\\Dev\\Token\\site\\sebsa\\sebsa\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\akira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alessandro.saito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9574,11 +9562,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\Dev\\Token\\site\\sebsa\\Sebsa.Data\\Sebsa.Data.csproj": {
-              "projectPath": "D:\\Dev\\Token\\site\\sebsa\\Sebsa.Data\\Sebsa.Data.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -9591,6 +9575,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.6, )"
+          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -9610,6 +9598,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.6, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[6.0.5, )"
           }
         },
         "imports": [

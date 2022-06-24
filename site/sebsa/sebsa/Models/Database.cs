@@ -8,6 +8,6 @@ namespace sebsa.Models
         {
 
         }
-        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }

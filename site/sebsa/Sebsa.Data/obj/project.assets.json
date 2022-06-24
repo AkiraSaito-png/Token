@@ -743,19 +743,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\akira\\.nuget\\packages\\": {}
+    "C:\\Users\\alessandro.saito\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Token\\site\\sebsa\\Sebsa.Data\\Sebsa.Data.csproj",
+      "projectUniqueName": "C:\\Users\\alessandro.saito\\OneDrive - SEB - Sistema Educacional Brasileiro\\Documentos\\Dev\\Token\\site\\sebsa\\Sebsa.Data\\Sebsa.Data.csproj",
       "projectName": "Sebsa.Data",
-      "projectPath": "D:\\Dev\\Token\\site\\sebsa\\Sebsa.Data\\Sebsa.Data.csproj",
-      "packagesPath": "C:\\Users\\akira\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Token\\site\\sebsa\\Sebsa.Data\\obj\\",
+      "projectPath": "C:\\Users\\alessandro.saito\\OneDrive - SEB - Sistema Educacional Brasileiro\\Documentos\\Dev\\Token\\site\\sebsa\\Sebsa.Data\\Sebsa.Data.csproj",
+      "packagesPath": "C:\\Users\\alessandro.saito\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alessandro.saito\\OneDrive - SEB - Sistema Educacional Brasileiro\\Documentos\\Dev\\Token\\site\\sebsa\\Sebsa.Data\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\akira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alessandro.saito\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

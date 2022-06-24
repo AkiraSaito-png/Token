@@ -6,8 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<Database>
-    (options => options.UseNpgsql(builder.Configuration.GetConnectionString("SebsaDb")));
+builder.Services.AddEntityFrameworkNpgsql()
+    .AddDbContext<Database>(options =>
+    options.UseNpgsql("Host=localhost;Port=5432;Database=sebsa;User Id=postgres;Password=1234"));
 
 var app = builder.Build();
 
@@ -28,6 +29,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Usuario, action=Index, id=?}");
 
 app.Run();
