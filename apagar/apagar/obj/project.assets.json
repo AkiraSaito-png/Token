@@ -9156,24 +9156,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alessandro.saito\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\akira\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alessandro.saito\\source\\repos\\apagar\\apagar\\apagar.csproj",
+      "projectUniqueName": "D:\\Dev\\Token\\apagar\\apagar\\apagar.csproj",
       "projectName": "apagar",
-      "projectPath": "C:\\Users\\alessandro.saito\\source\\repos\\apagar\\apagar\\apagar.csproj",
-      "packagesPath": "C:\\Users\\alessandro.saito\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alessandro.saito\\source\\repos\\apagar\\apagar\\obj\\",
+      "projectPath": "D:\\Dev\\Token\\apagar\\apagar\\apagar.csproj",
+      "packagesPath": "C:\\Users\\akira\\.nuget\\packages\\",
+      "outputPath": "D:\\Dev\\Token\\apagar\\apagar\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\alessandro.saito\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\akira\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

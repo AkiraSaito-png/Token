@@ -8,57 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = apagar
 build_property.RootNamespace = apagar
-build_property.ProjectDir = C:\Users\alessandro.saito\source\repos\apagar\apagar\
+build_property.ProjectDir = D:\Dev\Token\apagar\apagar\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\alessandro.saito\source\repos\apagar\apagar
+build_property.MSBuildProjectDirectory = D:\Dev\Token\apagar\apagar
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Home/Index.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Home/Privacy.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Shared/Error.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Dev/Token/apagar/apagar/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Usuarios/Create.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Usuarios/Delete.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Usuarios/Details.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Usuarios/Edit.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Usuarios/Index.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/_ViewImports.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/_ViewStart.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alessandro.saito/source/repos/apagar/apagar/Views/Shared/_Layout.cshtml]
+[D:/Dev/Token/apagar/apagar/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4c5eb9gmqw

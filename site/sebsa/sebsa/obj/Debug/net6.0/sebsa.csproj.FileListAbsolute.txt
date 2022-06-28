@@ -261,8 +261,6 @@ D:\Dev\Token\site\sebsa\sebsa\obj\Debug\net6.0\sebsa.RazorAssemblyInfo.cache
 D:\Dev\Token\site\sebsa\sebsa\obj\Debug\net6.0\sebsa.RazorAssemblyInfo.cs
 D:\Dev\Token\site\sebsa\sebsa\bin\Debug\net6.0\Npgsql.dll
 D:\Dev\Token\site\sebsa\sebsa\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\Dev\Token\site\sebsa\sebsa\bin\Debug\net6.0\Sebsa.Data.dll
-D:\Dev\Token\site\sebsa\sebsa\bin\Debug\net6.0\Sebsa.Data.pdb
 C:\Users\alessandro.saito\OneDrive - SEB - Sistema Educacional Brasileiro\Documentos\Dev\Token\site\sebsa\sebsa\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\alessandro.saito\OneDrive - SEB - Sistema Educacional Brasileiro\Documentos\Dev\Token\site\sebsa\sebsa\bin\Debug\net6.0\appsettings.json
 C:\Users\alessandro.saito\OneDrive - SEB - Sistema Educacional Brasileiro\Documentos\Dev\Token\site\sebsa\sebsa\bin\Debug\net6.0\sebsa.staticwebassets.runtime.json
