@@ -3,12 +3,12 @@
 <head>
     <title>GrupoSeb</title>
     <link rel="stylesheet" href="style/login_page.css">
+    <script src="../wwwroot/js/gerador.js"></script>
 </head>
 <body>
-
     <div class="screen-1">
         <div>
-            <img src="img/frame.png" alt="">
+            <img id="QRCodeImage">
         </div>
         <div class="texto">
             <p>
@@ -16,9 +16,11 @@
                 2- faça o login na sua conta.<br>
                 3- Clique em TOKEN.<br>
                 4- Aponte a câmera do seu celular para o QR Code.
+                <button onclick="gerarQRCode()">gerar</button>
             </p>
         </div>
+        <button onclick="gerarQRCode()">gerar</button>
     </div>
-
+    <button onclick="gerarQRCode()">gerar</button>
 </body>
 </html>

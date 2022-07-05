@@ -6,13 +6,14 @@
 <html>
 <head>
     <title>GrupoSeb</title>
-    <link rel="stylesheet" href="style/login_page.css">
+    <link rel="stylesheet" href="~/css/login_page.css">
+    <script src="~/js/gerador.js"></script>
 </head>
-<body>
+<body onload="gerarQRCode()">
 
     <div class="screen-1">
         <div>
-            <img src="img/frame.png" alt="">
+            <img id="QRCodeImage">
         </div>
         <div class="texto">
             <p>
@@ -23,7 +24,6 @@
             </p>
         </div>
     </div>
-
 </body>
 </html>
 }

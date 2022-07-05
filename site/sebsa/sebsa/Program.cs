@@ -6,9 +6,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddEntityFrameworkNpgsql()
+var startServer = builder.Services.AddEntityFrameworkNpgsql()
     .AddDbContext<Database>(options =>
-    options.UseNpgsql("Host=localhost;Port=5432;Database=sebsa;User Id=postgres;Password=1234"));
+    options.UseNpgsql("Host=sebsa.covoattbbrhu.sa-east-1.rds.amazonaws.com;Port=5432;Database=sebsa;User Id=postgres;Password=12345678"));
+
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddAuthentication("Identity.Login")
+    .AddCookie("Identity.Login", config =>
+    {
+        config.Cookie.Name = "Identity.Login";
+        config.LogoutPath = "/Login";
+        config.AccessDeniedPath = "/Login";
+        config.ExpireTimeSpan = TimeSpan.FromMinutes(15);
+     });
 
 var app = builder.Build();
 
@@ -25,10 +36,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
+    /*pattern: "{controller=ValidationLogin}/{action=Index}/{id?}");*/
     pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();

@@ -1,83 +1,69 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using Npgsql;
+using System.Security.Claims;
 
 namespace sebsa.Controllers
 {
     public class LoginController : Controller
     {
-        // GET: LoginController
         public ActionResult Index()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return Json(new { Msg = "Usuario logado!" });
+            }
             return View();
         }
 
-        // GET: LoginController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: LoginController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: LoginController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Logar(string email, string senha)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            NpgsqlConnection sqlConnection = new NpgsqlConnection("Host=sebsa.covoattbbrhu.sa-east-1.rds.amazonaws.com;Port=5432;Database=sebsa;User Id=postgres;Password=12345678");
+            await sqlConnection.OpenAsync();
+
+            NpgsqlCommand sqlCommand = sqlConnection.CreateCommand();
+            sqlCommand.CommandText = $"SELECT * FROM usuario WHERE email = '{email}' AND senha = '{senha}'";
+
+            NpgsqlDataReader reader = sqlCommand.ExecuteReader();
+
+            
+                if (await reader.ReadAsync())
+                {
+                    int id = reader.GetInt32(0);
+                    string nome = reader.GetString(1);
+
+                    List<Claim> acessoUsuario = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.NameIdentifier, id.ToString()),
+                        new Claim(ClaimTypes.Name, nome)
+                    };
+
+                    var identidade = new ClaimsIdentity(acessoUsuario, "Identity.Login");
+                    var userPrincipal = new ClaimsPrincipal(new[] { identidade });
+
+                    await HttpContext.SignInAsync(userPrincipal,
+                        new AuthenticationProperties
+                        {
+                            IsPersistent = false,
+                            ExpiresUtc = DateTime.Now.AddMinutes(15)
+                        });
+
+                    return RedirectToAction("Index", "ValidationLogin");
+                }
+                else
+                {
+                    return Json(new { Msg = "Usuario ou senha incorretos! Verifique suas credenciais!" });
+                }
         }
 
-        // GET: LoginController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<IActionResult> Logout()
         {
-            return View();
-        }
-
-        // POST: LoginController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
+            if (User.Identity.IsAuthenticated)
             {
-                return RedirectToAction(nameof(Index));
+                await HttpContext.SignOutAsync();
             }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: LoginController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: LoginController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction("Index","Login");
         }
     }
 }

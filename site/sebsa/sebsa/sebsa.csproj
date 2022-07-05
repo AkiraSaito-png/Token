@@ -7,8 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\img\" />
     <Folder Include="Views\Shared\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\login_page.css" />
+    <None Include="wwwroot\frame.png" />
+    <None Include="wwwroot\js\validation.js" />
+    <None Include="wwwroot\Sebsa.png" />
   </ItemGroup>
 
   <ItemGroup>

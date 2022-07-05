@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X99dEl9ShRlk4nE23DPE4SnHVuiqeyWR6rlRTNujJYE=",
+  "Hash": "LWX6nu2HNIcTd9jS19q9NS/AQQA16J2kh9q9YRBIq5k=",
   "Source": "sebsa",
   "BasePath": "_content/sebsa",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\css\\login_page.css",
+      "SourceId": "sebsa",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\",
+      "BasePath": "_content/sebsa",
+      "RelativePath": "css/login_page.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login_page.css"
+    },
     {
       "Identity": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\css\\site.css",
       "SourceId": "sebsa",
@@ -51,6 +68,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\frame.png",
+      "SourceId": "sebsa",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\",
+      "BasePath": "_content/sebsa",
+      "RelativePath": "frame.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\frame.png"
+    },
+    {
+      "Identity": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\js\\gerador.js",
+      "SourceId": "sebsa",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\",
+      "BasePath": "_content/sebsa",
+      "RelativePath": "js/gerador.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\gerador.js"
+    },
+    {
       "Identity": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\js\\site.js",
       "SourceId": "sebsa",
       "SourceType": "Discovered",
@@ -66,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\js\\validation.js",
+      "SourceId": "sebsa",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\",
+      "BasePath": "_content/sebsa",
+      "RelativePath": "js/validation.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\validation.js"
     },
     {
       "Identity": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -1035,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\Sebsa.png",
+      "SourceId": "sebsa",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\wwwroot\\",
+      "BasePath": "_content/sebsa",
+      "RelativePath": "Sebsa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Sebsa.png"
     }
   ]
 }

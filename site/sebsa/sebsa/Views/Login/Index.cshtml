@@ -1,8 +1,5 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-    <!DOCTYPE html>
+﻿@{}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,14 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrupoSeb</title>
-    <link rel="stylesheet" href="style/login_page.css">
-    <script defer src="script/validation.js"></script>
+    <link rel="stylesheet" href="~/css/login_page.css">
+    <script defer src="~/js/validation.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <form id="login" action="../Controllers/Logar" method="post">
+    <form id="login" action="Login/Logar" method="post">
         <div class="screen-1">
-            <img class="logo" src="img/Sebsa.png" alt="">
+            <img class="logo" src="~/Sebsa.png" alt="">
             <div class="email">
                 <label for="email">E-Mail</label>
                 <div class="sec-2">
@@ -37,11 +36,10 @@
             </div>
             <button class="login" type="submit">Login</button>
             <div class="footer">
-            <a href="Usuarios/Create.cshtml">Sign up</a>
+            <a href="">Sign up</a>
             <a>Esqueceu a senha?</a></div>
         </div>
     </form>
 </body>
 
 </html>
-}
