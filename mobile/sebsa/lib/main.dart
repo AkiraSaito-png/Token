@@ -1,23 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:postgres/postgres.dart';
 import 'package:sebsa/pages/signUp_page.dart';
 
-void main() async{
+Future<void> main() async {
+  final conn = PostgreSQLConnection(
+      'sebsa.covoattbbrhu.sa-east-1.rds.amazonaws.com', 
+      5435, 
+      'sebsa',
+      username: 'postgres', 
+      password: '12345678',
+      );
+      await conn.open();
   WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget{
-  MyApp({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp>{
-  @override
-  Widget build(BuildContext context){
-    return MaterialApp(
+  Widget build(BuildContext context) => MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      title: 'Sebsa',
+      initialRoute: 'login',
+      routes: {
+        'login': (context) => LoginPage(),
+      },
     );
-  }
 }
