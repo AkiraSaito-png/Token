@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = sebsa
 build_property.RootNamespace = sebsa
-build_property.ProjectDir = D:\Dev\Token\site\sebsa\sebsa\
+build_property.ProjectDir = C:\Users\alessandro.saito\OneDrive - SEB - Sistema Educacional Brasileiro\Documentos\continuação\Token\site\sebsa\sebsa\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Dev\Token\site\sebsa\sebsa
+build_property.MSBuildProjectDirectory = C:\Users\alessandro.saito\OneDrive - SEB - Sistema Educacional Brasileiro\Documentos\continuação\Token\site\sebsa\sebsa
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Dev/Token/site/sebsa/sebsa/Views/Login/Index.cshtml]
+[C:/Users/alessandro.saito/OneDrive - SEB - Sistema Educacional Brasileiro/Documentos/continuação/Token/site/sebsa/sebsa/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dev/Token/site/sebsa/sebsa/Views/Usuarios/Create.cshtml]
+[C:/Users/alessandro.saito/OneDrive - SEB - Sistema Educacional Brasileiro/Documentos/continuação/Token/site/sebsa/sebsa/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dev/Token/site/sebsa/sebsa/Views/Usuarios/Delete.cshtml]
+[C:/Users/alessandro.saito/OneDrive - SEB - Sistema Educacional Brasileiro/Documentos/continuação/Token/site/sebsa/sebsa/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dev/Token/site/sebsa/sebsa/Views/Usuarios/Details.cshtml]
+[C:/Users/alessandro.saito/OneDrive - SEB - Sistema Educacional Brasileiro/Documentos/continuação/Token/site/sebsa/sebsa/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dev/Token/site/sebsa/sebsa/Views/Usuarios/Edit.cshtml]
+[C:/Users/alessandro.saito/OneDrive - SEB - Sistema Educacional Brasileiro/Documentos/continuação/Token/site/sebsa/sebsa/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dev/Token/site/sebsa/sebsa/Views/Usuarios/Index.cshtml]
+[C:/Users/alessandro.saito/OneDrive - SEB - Sistema Educacional Brasileiro/Documentos/continuação/Token/site/sebsa/sebsa/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Dev/Token/site/sebsa/sebsa/Views/ValidationLogin/Index.cshtml]
+[C:/Users/alessandro.saito/OneDrive - SEB - Sistema Educacional Brasileiro/Documentos/continuação/Token/site/sebsa/sebsa/Views/ValidationLogin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFsaWRhdGlvbkxvZ2luXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

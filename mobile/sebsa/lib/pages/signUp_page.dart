@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:postgres/postgres.dart';
 import 'package:sebsa/pages/signIn_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -7,6 +8,9 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPage extends State<LoginPage> {
+var txtEmail = TextEditingController();
+var txtSenha = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -72,10 +76,7 @@ class _LoginPage extends State<LoginPage> {
                         elevation: 7.0,
                         child: GestureDetector(
                           onTap: (){
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => SignupPage()),
-                            );
+                            login(txtEmail.text, txtSenha.text);
                           },
                           child: Center(
                             child: Text(
@@ -99,5 +100,21 @@ class _LoginPage extends State<LoginPage> {
                 )),
           ],
         ));
+  }
+
+  void login (email, senha) async{
+    final conn = PostgreSQLConnection(
+      'sebsa.covoattbbrhu.sa-east-1.rds.amazonaws.com', 
+      5435, 
+      'sebsa',
+      username: 'postgres', 
+      password: '12345678',
+      );
+      await conn.open();
+      var db = await conn.query("SELECT * FROM usuario WHERE email = '{email}' AND senha = '{senha}'");
+
+      if(db != null){
+        Navigator.pushReplacementNamed(context, 'next');
+      }
   }
 }
