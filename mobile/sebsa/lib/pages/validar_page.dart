@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
-class SignupPage extends StatefulWidget {
+class Validar_page extends StatefulWidget {
   @override
-  _SignupPageState createState() => _SignupPageState();
+  _Validar_page createState() => _Validar_page();
 }
 
-class _SignupPageState extends State<SignupPage> {
+class _Validar_page extends State<Validar_page> {
   @override
   Widget build(BuildContext context) {
     return Container(

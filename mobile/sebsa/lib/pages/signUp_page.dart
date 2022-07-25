@@ -121,7 +121,7 @@ var txtSenha = TextEditingController();
       print(db);
 
       if(db != null){
-        Navigator.pushReplacementNamed(context, 'next');
+        Navigator.pushReplacementNamed(context, 'validar_page');
       }
   }
 }
