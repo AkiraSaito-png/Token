@@ -105,13 +105,20 @@ var txtSenha = TextEditingController();
   void login (email, senha) async{
     final conn = PostgreSQLConnection(
       'sebsa.covoattbbrhu.sa-east-1.rds.amazonaws.com', 
-      5435, 
+      5432, 
       'sebsa',
       username: 'postgres', 
       password: '12345678',
       );
       await conn.open();
-      var db = await conn.query("SELECT * FROM usuario WHERE email = '{email}' AND senha = '{senha}'");
+
+      print('connected...');
+
+      var db = await conn.query("SELECT * FROM usuario WHERE email = @email AND senha = @senha", substitutionValues: {
+        'email': email,
+        'senha': senha
+      });
+      print(db);
 
       if(db != null){
         Navigator.pushReplacementNamed(context, 'next');
