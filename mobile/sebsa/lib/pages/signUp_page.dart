@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:postgres/postgres.dart';
-import 'package:sebsa/pages/signIn_page.dart';
+import 'package:sebsa/pages/validar_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override

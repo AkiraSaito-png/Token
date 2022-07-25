@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sebsa/pages/signIn_page.dart';
+import 'package:sebsa/pages/validar_page.dart';
 import 'package:sebsa/pages/signUp_page.dart';
 
 Future<void> main() async {
