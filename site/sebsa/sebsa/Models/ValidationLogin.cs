@@ -2,6 +2,7 @@
 {
     public class ValidationLogin
     {
-        public int code { get; set; }
+        public string id { get; set; }
+        public string code { get; set; }
     }
 }

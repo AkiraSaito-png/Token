@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:postgres/postgres.dart';
 
 class Validar_page extends StatefulWidget {
   @override
@@ -8,6 +9,7 @@ class Validar_page extends StatefulWidget {
 }
 
 class _Validar_page extends State<Validar_page> {
+  String ticket = '';
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,19 +18,40 @@ class _Validar_page extends State<Validar_page> {
             direction: Axis.vertical,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              if(ticket != '')
+                Padding(
+                  padding: EdgeInsets.only(bottom: 24.0),
+                  child: Text(
+                    'Ticket: $ticket',
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
               ElevatedButton(
-                  onPressed: () => scanQR(), child: Text('Start QR scan')),
+                  onPressed: scanQR, child: Text('Start QR scan')),
             ]));
   }
 
-  Future<void> scanQR() async {
-    String qrScanRes;
-    try {
-      qrScanRes = await FlutterBarcodeScanner.scanBarcode(
+  scanQR() async {
+      String qrScanRes = await FlutterBarcodeScanner.scanBarcode(
           '#ff6666', 'Cancel', true, ScanMode.QR);
       print(qrScanRes);
-    } on PlatformException {
-      qrScanRes = 'falha ao ler o código';
-    }
+      setState(() => ticket = qrScanRes != '-1' ? qrScanRes : 'não validado');
+  }
+
+  validar (id, code) async{
+    final conn = PostgreSQLConnection(
+      'sebsa.covoattbbrhu.sa-east-1.rds.amazonaws.com', 
+      5432, 
+      'sebsa',
+      username: 'postgres', 
+      password: '12345678',
+      );
+      await conn.open();
+
+      var db = await conn.query("UPDATE code SET status = y WHERE id_usuario = @id AND code = @code", substitutionValues: {
+        'id': id,
+        'code': code,
+      });
+      print(db);
   }
 }

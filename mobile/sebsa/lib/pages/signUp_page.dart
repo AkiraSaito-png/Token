@@ -40,6 +40,7 @@ var txtSenha = TextEditingController();
                 child: Column(
                   children: <Widget>[
                     TextField(
+                      controller:txtEmail,
                       decoration: InputDecoration(
                           labelText: 'EMAIL',
                           labelStyle: TextStyle(
@@ -51,6 +52,7 @@ var txtSenha = TextEditingController();
                     ),
                     SizedBox(height: 20.0),
                     TextField(
+                      controller: txtSenha,
                       decoration: InputDecoration(
                           labelText: 'PASSWORD',
                           labelStyle: TextStyle(
@@ -112,15 +114,20 @@ var txtSenha = TextEditingController();
       );
       await conn.open();
 
-      print('connected...');
-
       var db = await conn.query("SELECT * FROM usuario WHERE email = @email AND senha = @senha", substitutionValues: {
         'email': email,
         'senha': senha
       });
       print(db);
 
-      if(db != null){
+      if(db == null || db == ''){
+        showDialog(context: context, builder: (BuildContext context){
+          return AlertDialog(
+            content: new Text("Usuario e/ou senha incorretos!"),
+          );
+        });
+      }
+      else{
         Navigator.pushReplacementNamed(context, 'validar_page');
       }
   }

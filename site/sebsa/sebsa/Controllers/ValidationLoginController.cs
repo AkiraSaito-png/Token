@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Npgsql;
+using sebsa.Models;
 
 namespace sebsa.Controllers
 {
@@ -11,73 +13,29 @@ namespace sebsa.Controllers
             return View();
         }
 
-        // GET: ValidationLoginController/Details/5
-        public ActionResult Details(int id)
+        public int ValidarId(int id)
         {
-            return View();
+            return id = 2;            
         }
 
-        // GET: ValidationLoginController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ValidationLoginController/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Validar(string code, ValidationLogin login, int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+            int id_usu = ValidarId(id);
 
-        // GET: ValidationLoginController/Edit/5
-        public ActionResult Edit(int id)
-        {
+            NpgsqlConnection sqlConnection = new NpgsqlConnection("Host=sebsa.covoattbbrhu.sa-east-1.rds.amazonaws.com;Port=5432;Database=sebsa;User Id=postgres;Password=12345678");
+            await sqlConnection.OpenAsync();
+
+            var commandText = $@"UPDATE code SET code = @code WHERE id_usuario = @id";
+            await using (var cmd = new NpgsqlCommand(commandText, sqlConnection))
+            {
+                cmd.Parameters.AddWithValue("id", id_usu);
+                cmd.Parameters.AddWithValue("code", login.code);
+
+                await cmd.ExecuteNonQueryAsync();
+            }
+
             return View();
-        }
-
-        // POST: ValidationLoginController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: ValidationLoginController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: ValidationLoginController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
     }
 }
