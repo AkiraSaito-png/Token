@@ -35,7 +35,36 @@ namespace sebsa.Controllers
                 await cmd.ExecuteNonQueryAsync();
             }
 
-            return View();
+            int i = 0;
+
+            while (i == 0)
+            {
+                string status = $"SELECT * FROM code WHERE code = @code AND status = 'y'";
+                await using (var cmd = new NpgsqlCommand(status, sqlConnection))
+                {
+                    cmd.Parameters.AddWithValue("code", login.code);
+
+                    await using (NpgsqlDataReader reader = await cmd.ExecuteReaderAsync())
+                        if (await reader.ReadAsync())
+                        {
+                            i = 1;
+                        }
+                        else
+                        {
+                            i = 0;
+                        }
+                }
+            }
+            string travar = $@"UPDATE code SET status = 'n' WHERE code = @code";
+            await using (var cmdd = new NpgsqlCommand(travar, sqlConnection))
+            {
+                cmdd.Parameters.AddWithValue("code", login.code);
+
+                await cmdd.ExecuteNonQueryAsync();
+            }
+
+            return RedirectToAction("Index", "Home");
+
         }
     }
 }

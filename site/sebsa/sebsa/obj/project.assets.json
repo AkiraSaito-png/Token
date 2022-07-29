@@ -9537,11 +9537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\sebsa.csproj",
+      "projectUniqueName": "C:\\Users\\akira\\Documents\\Dev\\Token\\site\\sebsa\\sebsa\\sebsa.csproj",
       "projectName": "sebsa",
-      "projectPath": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\sebsa.csproj",
+      "projectPath": "C:\\Users\\akira\\Documents\\Dev\\Token\\site\\sebsa\\sebsa\\sebsa.csproj",
       "packagesPath": "C:\\Users\\akira\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Token\\site\\sebsa\\sebsa\\obj\\",
+      "outputPath": "C:\\Users\\akira\\Documents\\Dev\\Token\\site\\sebsa\\sebsa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\akira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9617,7 +9617,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

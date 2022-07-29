@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:postgres/postgres.dart';
+import 'package:sebsa/pages/signUp_page.dart';
 
 class Validar_page extends StatefulWidget {
   @override
@@ -36,6 +37,7 @@ class _Validar_page extends State<Validar_page> {
           '#ff6666', 'Cancel', true, ScanMode.QR);
       print(qrScanRes);
       setState(() => ticket = qrScanRes != '-1' ? qrScanRes : 'não validado');
+      validar(2, ticket);
   }
 
   validar (id, code) async{
@@ -48,7 +50,7 @@ class _Validar_page extends State<Validar_page> {
       );
       await conn.open();
 
-      var db = await conn.query("UPDATE code SET status = y WHERE id_usuario = @id AND code = @code", substitutionValues: {
+      var db = await conn.query("UPDATE code SET status = 'y' WHERE id_usuario = @id AND code = @code", substitutionValues: {
         'id': id,
         'code': code,
       });
